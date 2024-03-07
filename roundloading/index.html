@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round Loading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+
+
+    <div class="loading"></div>
+    <h3 class="load">Loading...</h3>
+    <button id="btn" onclick="enter(event)">Enter</button>
+
+    <script>
+
+        var body=document.querySelector(".container")
+        var div=document.querySelector(".loading")
+        var button=document.querySelector("#btn")
+        var letter=document.querySelector(".load")
+
+   function enter(event){
+    body.style.backgroundColor="black"
+    div.style.display="block"
+    letter.style.display="block"
+    event.target.remove()
+
+   }
+
+ 
+    </script>
+    
+</body>
+
+</html>
