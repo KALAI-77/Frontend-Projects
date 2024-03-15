@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookinfo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <audio id="bg_sound">
+        <source src="welcome to bookinfo.mp3">
+    </audio>
+ 
+    <div class="top">
+        <h1>Bookinfo</h1>
+
+    </div>
+    
+    <div class="container">
+        <div class="contain">
+            <h1 id="h1">The Monk Who Sold His Ferrari</h1>
+            <h3>Robin Sharma</h3>
+            <p>Prioritize inner peace and fulfillment over material success.
+                Embrace simplicity and mindfulness in daily life.</p>
+
+            <button onclick="cancels(event), audio.play()">Cancel</button>
+        </div>
+    </div>
+    <button class="popupbtn" onclick="audio.play()">+</button>
+
+
+    <div class="overlay"></div>
+
+     <div class="popupbox">
+        <form action="">
+        <h1>Add Book</h1>
+        <input type="text"  placeholder="Book Name" id="name"><br>
+        <input type="text"  placeholder="Author Name" id="author_name"><br>
+        <textarea id="textarea" placeholder="Text Description"></textarea><br>
+        <button id="addbtn" onclick="audio.play()">Add</button>
+        <button id="cancel" onclick="audio.play()">Cancel</button>
+        
+        </form>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
